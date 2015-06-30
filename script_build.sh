@@ -7,7 +7,7 @@ export KBUILD_BUILD_USER=Legacy
 export KBUILD_BUILD_HOST=LegacyTeam
 
 
-prebuilts/misc/linux-x86/ccache/ccache -M 240G
+prebuilts/misc/linux-x86/ccache/ccache -M 490G
  
 #repo sync
 repo sync -j4
