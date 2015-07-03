@@ -15,10 +15,10 @@ repo sync -j4
 # clean
 make clean && make clobber
  
-cd /home/jenkins/vfs/user_1/validus
+cd /home/jenkins/vfs/user_1/<folder name>
  
 . build/envsetup.sh
-lunch validus_$device-userdebug
-make validus -j8
+lunch <rom name>_$device-userdebug
+make bacon -j8
 
 
