@@ -15,10 +15,7 @@ repo sync -j4
 # clean
 make clean && make clobber
  
-cd /home/jenkins/vfs/user_1/<folder name>
- 
-. build/envsetup.sh
-lunch <rom name>_$device-userdebug
-make bacon -j8
+cd /home/jenkins/vfs/user_1/pac
+./build-pac.sh $device
 
 
