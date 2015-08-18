@@ -3,8 +3,8 @@
 # ccache
 export USE_CCACHE=1
 export CCACHE_DIR=/home/jenkins/vfs/drive_ccache
-export KBUILD_BUILD_USER=Legacy
-export KBUILD_BUILD_HOST=LegacyTeam
+export KBUILD_BUILD_USER=Vatsal
+export KBUILD_BUILD_HOST=BuildBot
 
 
 prebuilts/misc/linux-x86/ccache/ccache -M 490G
