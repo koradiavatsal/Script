@@ -4,18 +4,15 @@
 export USE_CCACHE=1
 export CCACHE_DIR=/home/jenkins/vfs/drive_ccache
 export KBUILD_BUILD_USER=Vatsal
-export KBUILD_BUILD_HOST=BuildBot
+export KBUILD_BUILD_HOST=Automation
 
 
 prebuilts/misc/linux-x86/ccache/ccache -M 490G
- 
-#repo sync
-repo sync -j4
- 
+
 # clean
 make clean && make clobber
  
-cd /home/jenkins/vfs/user_1/pac
+cd /home/vatsal/cm
 . build/envsetup.sh
 lunch cm_$device-userdebug
 make bacon -j9
